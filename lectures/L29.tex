@@ -189,7 +189,7 @@ There's a slightly different function that is very much like \texttt{select()} a
 int poll( struct pollfd *fds, nfds_t nfds, int timeout );
 \end{lstlisting}
 
-The signature is a lot simpler, that's for sure. The first argument is an array of \texttt{struct pollfd}, which is our structure for passing in the sockets we wish to monitor. The second parameter is \texttt{ndfs} which is just the number of items in the array. Finally, \texttt{timeout} is the number of milliseconds to wait before returning with zero meaning don't wait at all, and a negative number meaning wait infinitely.
+The signature is a lot simpler, that's for sure. The first argument is an array of \texttt{struct pollfd}, which is our structure for passing in the sockets we wish to monitor. The second parameter is \texttt{nfds} which is just the number of items in the array. Finally, \texttt{timeout} is the number of milliseconds to wait before returning with zero meaning don't wait at all, and a negative number meaning wait infinitely.
 
 Alright, let's look at the structure:
 
